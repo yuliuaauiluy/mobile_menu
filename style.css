@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Основной шрифт и фон */
+body {
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: #fff;
+  color: #1B1C21;
+  width: 320px;
+  height: 1024px;
+  box-shadow: right;
+  box-shadow: 20px 0 20px rgba(0, 0, 0, 0.25);
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Italic.eot');
+    src: local('TT Lakes Italic'), local('TTLakes-Italic'),
+        url('TTLakes-Italic.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Italic.woff') format('woff'),
+        url('TTLakes-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+/* Ссылки */
+
+/* 1. Ссылка по умолчанию */
+a:link {
+  color: #1B1C21;
+  text-decoration: none;
+}
+
+/* 2. Посещённая ссылка */
+a:visited {
+  color: #551a8b;
+}
+
+/* 3. При наведении */
+a:hover {
+  color: #004080;
+  text-decoration: underline;
+}
+
+/* 4. Во время клика */
+a:active {
+  color: #cc0000;
+}
+
+/* 5. При фокусе (с клавиатуры) */
+a:focus {
+  outline: 2px dashed #ff9900;
+  outline-offset: 4px;
+}
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Кнопки */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.header__nav, .footer__contacts {
+  display: flex;
+}
+
+.header-nav__btn-close {
+  position: absolute;
+  top: 23px;
+  left: 24px;
+}
+.header-nav__btn-close .svg-bg, .header-nav__btn-search .svg-bg {
+  fill: #FF3E79; /* исходный цвет */
+  transition: fill 0.3s ease;
+}
+
+.header-nav__btn-close:hover .svg-bg, .header-nav__btn-search:hover .svg-bg {
+  fill: #d43768; /* более тёмный оттенок */
+}
+
+.header-nav__logo {
+  position: absolute;
+  top: 18.73px;
+  left: 80.73px;
+
+}
+.header-nav__btn-search {
+  position: absolute;
+  top: 23px;
+  left: 256px;
+
+}
+main {
+    position: relative;
+    width: 222px;
+    height: 876px;
+    top: 116px;
+
+}
+li {
+    list-style: none;
+}
+.main__nav {
+    position: absolute;
+    left: 24px;
+
+}
+.main-nav__decor {
+    position: absolute;
+    top: -2px;
+    left: -24px;
+}
+a.main-nav__equipment-repair--1 {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    top: 0px;
+
+    color: #7E7E82;
+}
+
+
+.main-nav__services {
+    position: absolute;
+    width: 132px;
+    height: 24px;
+    top: 32px;
+}
+.main-nav__corporate-clients {
+    position: absolute;
+    width: 198px;
+    height: 24px;
+    top: 64px;
+}
+.main-nav__equipment-sellers {
+    position: absolute;
+    width: 149px;
+    height: 24px;
+    top: 96px;
+}
+.main-nav__partners {
+    position: absolute;
+    width: 85px;
+    height: 24px;
+    top: 128px;
+}
+.main-nav__manufacturers {
+position: absolute;
+    width: 130px;
+    height: 24px;
+    top: 160px;
+}
+.main-nav__our-service-centers {
+position: absolute;
+    width: 188px;
+    height: 24px;
+    top: 192px;
+}
+.main-nav__contacts {
+position: absolute;
+    width: 72px;
+    height: 24px;
+    top: 224px;
+}
+.footer__contacts {
+    position: absolute;
+    width: 196px;
+    height: 124px;
+    left: 24px;
+    top: 804px;
+}
+
+.footer__contacts-content--phone .svg-bg, .footer__contacts-content--chat .svg-bg, .footer__contacts-content--profile .svg-bg{
+  fill: #FF3E79; /* исходный цвет */
+  transition: fill 0.3s ease;
+}
+
+.footer__contacts-content--phone:hover .svg-bg,  .footer__contacts-content--chat:hover .svg-bg, .footer__contacts-content--profile:hover .svg-bg  {
+  fill: #d43768; /* более тёмный оттенок */
+}
+
+.footer__contacts-content--chat {
+position: absolute;
+left: 54px;
+}
+.footer__contacts-content--profile {
+position: absolute;
+left: 112px;
+}
+.footer__contacts-content--mail {
+position: absolute;
+left: 24px;
+width: 106px;
+height: 24px;
+top: 860px;
+}
+.footer__contacts-content--tel {
+position: absolute;
+left: 24px;
+width: 196px;
+height: 32px;
+top: 896px;
+
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: -0.6px;
+}
+.language-switcher {
+    position: absolute;
+    width: 87px;
+    height: 24px;
+    top: 968px;
+    left: 24px;
+}
+.language-switcher a {
+width: 25px;
+height: 24px;
+line-height: 24px;
+letter-spacing: -0.2px;
+font-size: 16px;
+font-weight: 500;
+}
+.language-switcher a:first-child {
+    color: #7E7E82;
+}

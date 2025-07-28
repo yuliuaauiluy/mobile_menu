@@ -14,10 +14,18 @@ body {
   letter-spacing: -0.2px;
   background-color: #fff;
   color: #1B1C21;
-  width: 320px;
-  height: 1024px;
-  box-shadow: right;
+
+  max-width: 320px;
+  width: 100%;
+
+  height: 100vh; /* или auto */
+  max-height: 100vh;
+
+ 
   box-shadow: 20px 0 20px rgba(0, 0, 0, 0.25);
+
+
+
 }
 @font-face {
     font-family: 'TT Lakes';
